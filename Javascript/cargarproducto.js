@@ -49,6 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         contenedor.appendChild(card);
 
+        card.querySelectorAll(".splide__slide img").forEach(img => {
+          img.addEventListener("click", () => {
+            crearModalCarrusel(imagenes); // usa las imágenes del producto
+          });
+        });
+        
+
         new Splide(`#splide-${index}`, {
           type: 'fade',
           rewind: true,
@@ -61,3 +68,41 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error al cargar los productos:", error);
     });
 });
+
+
+function crearModalCarrusel(imagenes) {
+  const modal = document.createElement("div");
+  modal.classList.add("modal-carrusel");
+
+  const cerrarBtn = document.createElement("button");
+  cerrarBtn.textContent = "✖";
+  cerrarBtn.classList.add("cerrar-modal");
+  cerrarBtn.addEventListener("click", () => modal.remove());
+
+  const carruselId = `modal-splide-${Date.now()}`;
+  const slides = imagenes.map(img => `
+    <li class="splide__slide">
+      <img src="${img}" alt="Imagen ampliada">
+    </li>
+  `).join("");
+
+  modal.innerHTML = `
+    <div id="${carruselId}" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          ${slides}
+        </ul>
+      </div>
+    </div>
+  `;
+
+  modal.appendChild(cerrarBtn);
+  document.body.appendChild(modal);
+
+  new Splide(`#${carruselId}`, {
+    type: 'loop',
+    pagination: true,
+    arrows: true,
+  }).mount();
+}
+

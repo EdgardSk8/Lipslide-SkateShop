@@ -17,6 +17,36 @@ html {
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*CARRUSEL*/
+
+.modal-carrusel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-carrusel .splide {
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-carrusel .cerrar-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
@@ -34,11 +64,20 @@ html {
   max-width: 100%;
   height: auto;
   width: auto;
-  max-height: 500px; /* Ajusta según lo que necesites */
+  max-height: 500px;
   object-fit: contain;
-  box-shadow: 5px 5px 5px rgba(163, 0, 0, 0.9); /* Sombra sutil */
+  box-shadow: 5px 5px 5px rgba(163, 0, 0, 0.9);
   border-radius: 20px;
+
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
 }
+
+.seccion-1 img:hover {
+  transform: scale(0.95) translateY(10px); /* Zoom + desplazamiento hacia abajo */
+  box-shadow: 10px 10px 20px rgba(163, 0, 0, 0.8); /* Sombra más intensa */
+}
+
 
 /* -------------------------------------------------------------------
    RESPONSIVE para móviles
@@ -50,11 +89,6 @@ html {
     max-height: 200px;
   }
 
-  .navegacion {
-    background-color: black; 
-    padding: 5px;
-    border-radius: 10px;
-  }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
@@ -126,6 +160,13 @@ html {
   object-position: center center; /* centrar recorte */
   display: block;
   cursor: pointer;
+
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.splide__slide img:hover {
+  transform: scale(1.05) translateY(10px) rotate(1deg);
+  transition: transform 0.4s ease;
 }
 
 /* -------------------------------------------------------------------
@@ -167,8 +208,10 @@ html {
     scroll-margin-top: 138px;
   }
   
-
 }
+
+
+
 
 
 

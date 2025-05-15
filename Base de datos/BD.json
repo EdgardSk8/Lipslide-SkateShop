@@ -28,19 +28,16 @@
     },
     {
       "ID": 3,
-      "Marca": "Bones",
-      "Descripcion": "Rodamientos Bones Speed Cream",
+      "Marca": "Lubricante para Rodamientos",
+      "Descripcion": "Lubricante para Rodamientos Bones Speed Cream",
       "Tipo": "Rodamientos",
       "Medida": "",
       "Precio": 10,
       "Unidades": 5,
       "Disponible": true,
       "Imagenes": [
-        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-1.jpg",
-        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-2.jpg",
-        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-3.jpg",
-        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-4.jpg",
-        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-5.jpg"
+        "/Recursos/Seccion 2/Extras/Lubricante-1.jpg",
+        "/Recursos/Seccion 2/Extras/Lubricante-2.jpg"
       ]
     },
     {
@@ -53,7 +50,10 @@
       "Unidades": 10,
       "Disponible": true,
       "Imagenes": [
-        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bronson-FelipeNunez.jpg"
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bronson-FelipeNunez-1.jpg",
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bronson-FelipeNunez-2.jpg",
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bronson-FelipeNunez-3.jpg",
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bronson-FelipeNunez-4.jpg"
       ]
     },
     {
@@ -99,7 +99,7 @@
     {
       "ID": 8,
       "Marca": "Pivots",
-      "Descripcion": "Pivots CUP Independent",
+      "Descripcion": "Pivots CUPS Independent",
       "Tipo": "Pivot",
       "Medida": "",
       "Precio": 1,
