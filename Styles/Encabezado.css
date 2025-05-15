@@ -54,6 +54,7 @@
 
   /* Responsive: Tablets y móviles */
 @media screen and (max-width: 768px) {
+
   .encabezado {
     flex-direction: column;
     align-items: flex-start;

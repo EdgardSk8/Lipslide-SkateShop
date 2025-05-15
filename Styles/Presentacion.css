@@ -92,21 +92,32 @@
 
   /* RESPONSIVE: móvil o pantallas pequeñas */
 @media screen and (max-width: 768px) {
+
     .Presentacion-1 {
-        flex-direction: column; /* Cambia a vertical si se desea en pantallas pequeñas */
+        flex-direction: column;
         padding: 0px 10px;
+        border: 2px solid white;
+        display: flex;
+        height: 100vh; /* para ocupar toda la altura de la pantalla */
     }
-
+    
     .Presentacion-1 p {
-        font-size: 36px; /* Tamaño más pequeño para móviles */
+        font-size: 36px;
+        flex-grow: 1; /* ocupa menos que la imagen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-
+    
     .Presentacion-1 img {
         height: auto;
         max-height: 600px;
         width: 100%;
+        flex-grow: 2; /* ocupa más espacio que el texto */
+        object-fit: contain;
     }
-
+    
     .Presentacion-2 p {
         font-size: 26px;
         -webkit-text-stroke: 0.8px white;

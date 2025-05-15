@@ -45,12 +45,9 @@ html {
 ------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
-  .seccion-1 .img-wrapper {
-    flex: 1 1 calc(50% - 10px); /* Asegura 2 columnas también en móvil */
-  }
 
   .seccion-1 img {
-    max-height: 250px;
+    max-height: 200px;
   }
 
   .navegacion {
@@ -138,12 +135,14 @@ html {
 @media screen and (max-width: 768px) {
 
   #contenedor-productos {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas*/
+    grid-template-columns: 1fr; /* una columnas*/
   }
 
   .cards {
     flex-direction: column; /* imagen arriba, info abajo */
     height: auto; /* ajusta a contenido */
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Sombra sutil */
   }
 
   .splide {
@@ -157,10 +156,6 @@ html {
     height: auto;
     max-height: 300px;
     object-fit: contain;
-  }
-
-  .info {
-    padding: 10px;
   }
 
   .botones button{
