@@ -40,6 +40,26 @@ html {
   border-radius: 20px;
 }
 
+/* -------------------------------------------------------------------
+   RESPONSIVE para móviles
+------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .seccion-1 .img-wrapper {
+    flex: 1 1 calc(50% - 10px); /* Asegura 2 columnas también en móvil */
+  }
+
+  .seccion-1 img {
+    max-height: 250px;
+  }
+
+  .navegacion {
+    background-color: black; 
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 .seccion-2 {
   scroll-margin-top: 60px;
@@ -111,7 +131,49 @@ html {
   cursor: pointer;
 }
 
-/*------------------------------------------------------*/
+/* -------------------------------------------------------------------
+   RESPONSIVE para móviles
+------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  #contenedor-productos {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas*/
+  }
+
+  .cards {
+    flex-direction: column; /* imagen arriba, info abajo */
+    height: auto; /* ajusta a contenido */
+  }
+
+  .splide {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .splide__slide img {
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .botones button{
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .seccion-2 {
+    scroll-margin-top: 138px;
+  }
+  
+
+}
 
 
 

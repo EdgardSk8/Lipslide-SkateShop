@@ -66,15 +66,15 @@
     position: relative;    /* Contenedor relativo para el texto absoluto */
     height: 100vh;
     overflow: hidden;
-  }
+}
   
-  .Presentacion-2 img {
+.Presentacion-2 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
+}
   
-  .Presentacion-2 p {
+.Presentacion-2 p {
     position: absolute;    /* Para superponerlo encima de la imagen */
     top: 50%;             /* Centrar verticalmente */
     left: 50%;            /* Centrar horizontalmente */
@@ -86,5 +86,31 @@
     margin: 0;
     pointer-events: none; /* Para que el texto no interfiera */
     -webkit-text-stroke: 1px rgb(255, 255, 255); /* grosor y color del borde */
-  }
+}
   
+  /*----------------------------------------------------------------------------------------------*/
+
+  /* RESPONSIVE: móvil o pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .Presentacion-1 {
+        flex-direction: column; /* Cambia a vertical si se desea en pantallas pequeñas */
+        padding: 0px 10px;
+    }
+
+    .Presentacion-1 p {
+        font-size: 36px; /* Tamaño más pequeño para móviles */
+    }
+
+    .Presentacion-1 img {
+        height: auto;
+        max-height: 600px;
+        width: 100%;
+    }
+
+    .Presentacion-2 p {
+        font-size: 26px;
+        -webkit-text-stroke: 0.8px white;
+    }
+
+      
+}
