@@ -1,0 +1,113 @@
+[
+    {
+      "ID": 1,
+      "Marca": "DeathWish",
+      "Descripcion": "Deathwish Jamie Foy pro model",
+      "Tipo": "Tabla",
+      "Medida": "8.5",
+      "Precio": 65.00,
+      "Unidades": 10,
+      "Disponible": true,
+      "Imagenes": [
+        "recursos/Seccion 2/Tablas/DeathWish-JaimeFoy.jpg"
+      ]
+    },
+    {
+      "ID": 2,
+      "Marca": "Baker",
+      "Descripcion": "Tabla Baker Roja Clasica",
+      "Tipo": "Tabla",
+      "Medida": "8.5",
+      "Precio": 67,
+      "Unidades": 7,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Tablas/Baker-Roja-1.png",
+        "/Recursos/Seccion 2/Tablas/Baker-Roja-2.png"
+      ]
+    },
+    {
+      "ID": 3,
+      "Marca": "Bones",
+      "Descripcion": "Rodamientos Bones Speed Cream",
+      "Tipo": "Rodamientos",
+      "Medida": "",
+      "Precio": 10,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-1.jpg",
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-2.jpg",
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-3.jpg",
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-4.jpg",
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bones-5.jpg"
+      ]
+    },
+    {
+      "ID": 4,
+      "Marca": "Rodamientos Bronson",
+      "Descripcion": "Rodamientos Bronson G3 NEXT GENERATION BEARING Felipe Nunez",
+      "Tipo": "Rodamientos",
+      "Medida": "",
+      "Precio": 25,
+      "Unidades": 10,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Rodamientos/Rodamientos-Bronson-FelipeNunez.jpg"
+      ]
+    },
+    {
+      "ID": 5,
+      "Marca": "April Guy Mariano",
+      "Descripcion": "April Guy Mariano - 1990 Pro Model ",
+      "Tipo": "Tabla",
+      "Medida": "5",
+      "Precio": 65,
+      "Unidades": 7,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Tablas/April-GuyMariano-1.jpg",
+        "/Recursos/Seccion 2/Tablas/April-GuyMariano-2.jpg"
+      ]
+    },
+    {
+      "ID": 6,
+      "Marca": "Lija Slayer X MobGrip",
+      "Descripcion": "Lija Slayer X MobGrip",
+      "Tipo": "Lija",
+      "Medida": "",
+      "Precio": 13,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Lijas/LijaSlayerMobGrip.png"
+      ]
+    },
+    {
+      "ID": 7,
+      "Marca": "Llave de Skate Independent",
+      "Descripcion": "Llave de Skate Independent",
+      "Tipo": "Llave",
+      "Medida": "",
+      "Precio": 15,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Extras/Llaveskateindependent.png"
+      ]
+    },
+    {
+      "ID": 8,
+      "Marca": "Pivots",
+      "Descripcion": "Pivots CUP Independent",
+      "Tipo": "Pivot",
+      "Medida": "",
+      "Precio": 1,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Extras/Pivotsindependent.jpg"
+      ]
+    }
+  ]
+  

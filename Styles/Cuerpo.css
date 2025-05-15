@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.cuerpo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+.seccion-1 {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Espacio entre imágenes */
+  background-color: #c71717;
+}
+  
+.seccion-1 img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 500px; /* Ajusta según lo que necesites */
+  object-fit: contain;
+  box-shadow: 5px 5px 5px rgba(163, 0, 0, 0.9); /* Sombra sutil */
+  border-radius: 20px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+.seccion-2 {
+  scroll-margin-top: 60px;
+  padding: 10px;
+}
+
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 16px; /* Espacio entre tarjetas */
+  padding: 0;
+}
+
+.cards {
+  border: 2px solid rgb(187, 186, 186);
+  display: flex;
+  gap: 10px;
+  height: 250px; /* altura fija para mantener consistencia */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.botones button{
+  padding: 10px 20px;
+  background-color: #ca0303;       /* Rojo vibrante */
+  color: white;                    /* Texto blanco */
+  border: none;                   /* Sin borde */
+  border-radius: 4px;             /* Bordes redondeados */
+  font-size: 16px;                /* Tamaño legible */
+  cursor: pointer;                /* Manito al pasar mouse */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.4); /* Sombra sutil */
+  bottom: 2px;
+}
+
+.botones {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.botones button:hover {
+  background-color: #eb0404;      /* Rojo más oscuro al pasar */
+}
+
+/*------------------------------------------------------*/
+
+.splide {
+  flex: 0 0 45%; /* ancho fijo */
+  max-width: none;
+  height: 100%; /* toma toda la altura del card */
+  position: relative;
+  overflow: hidden;
+  
+  display: flex;           /* flexbox */
+  align-items: center;     /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente, opcional */
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;            /* para mantener proporción */
+  object-fit: cover;
+  object-position: center center; /* centrar recorte */
+  display: block;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------*/
+
+
+
+
