@@ -108,6 +108,58 @@
       "Imagenes": [
         "/Recursos/Seccion 2/Extras/Pivotsindependent.jpg"
       ]
+    },
+    {
+      "ID": 9,
+      "Marca": "Cadena de Skate",
+      "Descripcion": "Cadena de Skate",
+      "Tipo": "Cadena",
+      "Medida": "",
+      "Precio": 10,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Accesorios/CadenaSkate.jpg"
+      ]
+    },
+    {
+      "ID": 10,
+      "Marca": "Cadena de skate Truck de Oro",
+      "Descripcion": "Cadena de skate Truck de Oro",
+      "Tipo": "Cadena",
+      "Medida": "",
+      "Precio": 50,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Accesorios/CadenaSkateOroTruck.png"
+      ]
+    },
+    {
+      "ID": 11,
+      "Marca": "Sticker Santa Cruz",
+      "Descripcion": "Sticker Santa Cruz",
+      "Tipo": "Sticker",
+      "Medida": "",
+      "Precio": 14,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Stickers/StickerSantaCruz.png"
+      ]
+    },
+    {
+      "ID": 12,
+      "Marca": "Zapatos Vans",
+      "Descripcion": "Zapatos Vans",
+      "Tipo": "Ropa",
+      "Medida": "Talla 9.5 US",
+      "Precio": 89.99,
+      "Unidades": 5,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Ropa/Zapatos-Vans.png"
+      ]
     }
   ]
   

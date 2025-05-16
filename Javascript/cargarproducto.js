@@ -1,14 +1,36 @@
-document.addEventListener("DOMContentLoaded", () => {
+cargarProductos({
+  contenedorId: "contenedor-productos-skate",
+  tiposPermitidos: ["Tabla", "Rodamientos", "Lija", "Llave", "Pivot"]
+});
+
+cargarProductos({
+  contenedorId: "contenedor-productos-accesorios",
+  tiposPermitidos: ["Cadena"]
+});
+
+cargarProductos({
+  contenedorId: "contenedor-productos-stickers",
+  tiposPermitidos: ["Sticker"]
+});
+
+cargarProductos({
+  contenedorId: "contenedor-productos-ropa",
+  tiposPermitidos: ["Ropa"]
+});
+
+
+function cargarProductos({ contenedorId, tiposPermitidos }) {
   fetch("/Base de datos/BD.json")
     .then(response => response.json())
     .then(BD => {
-      const contenedor = document.getElementById("contenedor-productos");
+      const contenedor = document.getElementById(contenedorId);
       contenedor.innerHTML = "";
 
-      // Filtrar productos disponibles
-      const productosDisponibles = BD.filter(p => p.Disponible === true).slice(0, 8);
+      const productosFiltrados = BD.filter(p =>
+        p.Disponible === true && tiposPermitidos.includes(p.Tipo)
+      ).slice(0, 4);
 
-      productosDisponibles.forEach((producto, index) => {
+      productosFiltrados.forEach((producto, index) => {
         const card = document.createElement("div");
         card.classList.add("cards");
 
@@ -21,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join("");
 
         const carruselHtml = `
-          <div id="splide-${index}" class="splide">
+          <div id="splide-${contenedorId}-${index}" class="splide">
             <div class="splide__track">
               <ul class="splide__list">
                 ${slides}
@@ -39,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
               <strong>Precio:</strong> $${producto.Precio}<br>
               ${producto.Medida ? `<br><strong>Medida:</strong> ${producto.Medida}` : ""}
             </p>
-
             <br>
             <div class="botones">
               <button>Agregar al carrito</button>
@@ -51,12 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         card.querySelectorAll(".splide__slide img").forEach(img => {
           img.addEventListener("click", () => {
-            crearModalCarrusel(imagenes); // usa las imágenes del producto
+            crearModalCarrusel(imagenes);
           });
         });
-        
 
-        new Splide(`#splide-${index}`, {
+        new Splide(`#splide-${contenedorId}-${index}`, {
           type: 'fade',
           rewind: true,
           pagination: false,
@@ -67,17 +87,23 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => {
       console.error("Error al cargar los productos:", error);
     });
-});
+}
+
+
+
 
 
 function crearModalCarrusel(imagenes) {
+  const overlay = document.createElement("div");
+  overlay.classList.add("modal-overlay");
+
   const modal = document.createElement("div");
   modal.classList.add("modal-carrusel");
 
   const cerrarBtn = document.createElement("button");
   cerrarBtn.textContent = "✖";
   cerrarBtn.classList.add("cerrar-modal");
-  cerrarBtn.addEventListener("click", () => modal.remove());
+  cerrarBtn.addEventListener("click", () => overlay.remove());
 
   const carruselId = `modal-splide-${Date.now()}`;
   const slides = imagenes.map(img => `
@@ -97,7 +123,14 @@ function crearModalCarrusel(imagenes) {
   `;
 
   modal.appendChild(cerrarBtn);
-  document.body.appendChild(modal);
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  // Previene que el clic dentro del modal cierre el overlay
+  modal.addEventListener("click", (e) => e.stopPropagation());
+
+  // Cierra si se hace clic fuera del modal
+  overlay.addEventListener("click", () => overlay.remove());
 
   new Splide(`#${carruselId}`, {
     type: 'loop',
@@ -105,4 +138,5 @@ function crearModalCarrusel(imagenes) {
     arrows: true,
   }).mount();
 }
+
 
