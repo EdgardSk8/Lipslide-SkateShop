@@ -14,16 +14,16 @@
     },
     {
       "ID": 2,
-      "Marca": "Baker",
-      "Descripcion": "Tabla Baker Roja Clasica",
+      "Marca": "Skate Armado Almost",
+      "Descripcion": "Skate Armado Almost",
       "Tipo": "Tabla",
-      "Medida": "8.5",
-      "Precio": 67,
+      "Medida": "8.0",
+      "Precio": 125,
       "Unidades": 7,
       "Disponible": true,
       "Imagenes": [
-        "/Recursos/Seccion 2/Tablas/Baker-Roja-1.jpg",
-        "/Recursos/Seccion 2/Tablas/Baker-Roja-2.png"
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-2.jpg",
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-1.jpg"
       ]
     },
     {
@@ -159,6 +159,20 @@
       "Disponible": true,
       "Imagenes": [
         "/Recursos/Seccion 2/Ropa/Zapatos-Vans.png"
+      ]
+    },
+    {
+      "ID": 13,
+      "Marca": "Baker",
+      "Descripcion": "Tabla Baker Roja Clasica",
+      "Tipo": "Tabla",
+      "Medida": "8.5",
+      "Precio": 67,
+      "Unidades": 7,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Tablas/Baker-Roja-1.png",
+        "/Recursos/Seccion 2/Tablas/Baker-Roja-2.png"
       ]
     }
   ]

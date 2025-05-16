@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 .cuerpo {
@@ -57,6 +58,7 @@ html {
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
 .seccion-1 {
+  margin-bottom: 20px;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -95,9 +97,9 @@ html {
 --------------------------- */
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-.seccion-2, .seccion-3, .seccion-4, .seccion-5 { padding: 20px; }
+.seccion-2, .seccion-3, .seccion-4, .seccion-5 { padding-left: 20px; padding-right: 20px; }
 
-#seccion-2, #seccion-3, #seccion-4,  #seccion-5{ scroll-margin-top: 70px; }
+#seccion-2, #seccion-3, #seccion-4,  #seccion-5{ scroll-margin-top: 90px; }
 
 #contenedor-productos-skate,
 #contenedor-productos-accesorios,
@@ -146,28 +148,57 @@ html {
   box-shadow: 0 2px 5px rgb(255, 0, 0);
 }
 
+.mi-formulario {
+  display: flex;
+  justify-content: flex-end; /* Alinea todo al inicio (izquierda) */
+  align-items: center;
+  gap: 10px; /* Espacio entre elementos */
+  padding-top: 10px;
+}
+
+.btnvermas {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnvermas:hover {
+  background-color: #0056b3;
+}
+
+
 /*------------------------------------------------------*/
 
 .splide {
-  flex: 0 0 45%; 
-  max-width: none;
-  height: 100%; 
+  flex: 0 0 45%;
+  height: 100%;
   position: relative;
   overflow: hidden;
-  
-  display: flex;          
-  align-items: center;    
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.splide__slide img {
-  width: 100%;
-  height: auto;            
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-  cursor: pointer;
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* Asegura una altura uniforme mínima */
 }
+
+.splide__slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  cursor: pointer;
+  display: block;
+}
+
 
 
 /* ------------------------------------------------
