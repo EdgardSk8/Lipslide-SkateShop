@@ -196,19 +196,6 @@ html {
     border-radius: 10px;
   }
 
-  .splide {
-    flex: 0 0 auto;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .splide__slide img {
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
-  }
-
   .botones button{
     padding: 10px 10px;
     font-size: 14px;
@@ -219,6 +206,11 @@ html {
   #seccion-4, 
   #seccion-5 { 
     scroll-margin-top: 89px;
+  }
+
+  .modal-carrusel {
+    max-width: 40vh;
+    max-height: 100vh;
   }
 
   
