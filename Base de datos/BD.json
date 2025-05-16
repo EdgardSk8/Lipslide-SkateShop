@@ -9,9 +9,9 @@
       "Unidades": 10,
       "Disponible": true,
       "Imagenes": [
-        "recursos/Seccion 2/Tablas/DeathWish-JaimeFoy.png",
-        "recursos/Seccion 2/Tablas/DeathWish-JaimeFoy.PNG",
-        "recursos/Seccion 2/Tablas/DeathWish-JaimeFoy.jpg"
+        "/recursos/Seccion 2/Tablas/DeathWish-JaimeFoy.PNG",
+        "/recursos/Seccion 2/Tablas/DeathWish-jaimeFoy.jpg",
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-2.jpg"
       ]
     },
     {
