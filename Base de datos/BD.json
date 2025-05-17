@@ -9,12 +9,8 @@
       "Unidades": 10,
       "Disponible": true,
       "Imagenes": [
-        "/recursos/Seccion 2/Tablas/DeathWish-JF.PNG",
-        "/recursos/Seccion 2/Tablas/DeathWish-jaimeFoy.jpg",
-        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-2.jpg",
-        "/recursos/Seccion 2/Tablas/DeathWish-JaimeFoy2.PNG",
-        "/recursos/Seccion 2/Tablas/DeathWish-JaimeFoy4.jpg",
-        "/recursos/Seccion 2/Tablas/DeathWish-JaimeFoy5.jpg"
+        "/recursos/Seccion 2/Tablas/JaimeFoy-DeathWish.jpg",
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-3.jpg"
       ]
     },
     {
@@ -29,10 +25,21 @@
       "Imagenes": [
         "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-2.jpg",
         "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-1.jpg",
-        "/recursos/Seccion 2/Tablas/DeathWish-JaimeFoy.PNG",
-        "/recursos/Seccion 2/Tablas/DeathWish-jaimeFoy.jpg",
-        "/recursos/Seccion 2/Tablas/DeathWish-JaimeFoy2.PNG",
-        "/recursos/Seccion 2/Tablas/DeathWish-JaimeFoy3.PNG"
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-3.jpg"
+      ]
+    },
+    {
+      "ID": 2,
+      "Marca": "Skate Armado Almost",
+      "Descripcion": "Skate Armado Almost",
+      "Tipo": "Tabla",
+      "Medida": "8.0",
+      "Precio": 125,
+      "Unidades": 7,
+      "Disponible": true,
+      "Imagenes": [
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-2.jpg",
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-1.jpg"
       ]
     },
     {
