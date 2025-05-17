@@ -1,15 +1,17 @@
 [
     {
       "ID": 1,
-      "Marca": "DeathWish",
-      "Descripcion": "Deathwish Jamie Foy pro model",
+      "Marca": "D3athW1sh",
+      "Descripcion": "D3athw1sh Jamie Foy pro model",
       "Tipo": "Tabla",
       "Medida": "8.5",
       "Precio": 65.00,
       "Unidades": 10,
       "Disponible": true,
       "Imagenes": [
-        "/recursos/Seccion 2/Tablas/TablaJF.jpg"
+        "/recursos/Seccion 2/Tablas/TablaJF.jpg",
+        "/recursos/Seccion 2/Tablas/TablaJF-copy.jpg",
+        "/recursos/Seccion 2/Tablas/TablaJF-copy.png"
       ]
     },
     {
@@ -23,7 +25,10 @@
       "Disponible": true,
       "Imagenes": [
         "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-2.jpg",
-        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-1.jpg"
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-1.jpg",
+        "/recursos/Seccion 2/Tablas/TablaJF.jpg",
+        "/recursos/Seccion 2/Tablas/TablaJF-copy.jpg",
+        "/recursos/Seccion 2/Tablas/TablaJF-copy.png"
       ]
     },
     {
