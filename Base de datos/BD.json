@@ -1,8 +1,8 @@
 [
     {
       "ID": 1,
-      "Marca": "D3athW1sh",
-      "Descripcion": "D3athw1sh Jamie Foy pro model",
+      "Marca": "asd",
+      "Descripcion": "fdfdsfJamie Fasfa pro model",
       "Tipo": "Tabla",
       "Medida": "8.5",
       "Precio": 65.00,
@@ -11,7 +11,9 @@
       "Imagenes": [
         "/recursos/Seccion 2/Tablas/TablaJF.jpg",
         "/recursos/Seccion 2/Tablas/TablaJF-copy.jpg",
-        "/recursos/Seccion 2/Tablas/TablaJF-copy.png"
+        "/recursos/Seccion 2/Tablas/TablaJF-copy.png",
+        "/recursos/Seccion 2/Tablas/ricandomayorga1.jpg",
+        "/recursos/Seccion 2/Tablas/ricandomayorga2.jpg"
       ]
     },
     {
