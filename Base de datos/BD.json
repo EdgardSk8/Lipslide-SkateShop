@@ -1,36 +1,15 @@
 [
     {
       "ID": 1,
-      "Marca": "asd",
-      "Descripcion": "fdfdsfJamie Fasfa pro model",
+      "Marca": "Tabla DeathWish",
+      "Descripcion": "Death Wish Jaime Foy pro model",
       "Tipo": "Tabla",
       "Medida": "8.5",
       "Precio": 65.00,
       "Unidades": 10,
       "Disponible": true,
       "Imagenes": [
-        "/recursos/Seccion 2/Tablas/TablaJF.jpg",
-        "/recursos/Seccion 2/Tablas/TablaJF-copy.jpg",
-        "/recursos/Seccion 2/Tablas/TablaJF-copy.png",
-        "/recursos/Seccion 2/Tablas/ricandomayorga1.jpg",
-        "/recursos/Seccion 2/Tablas/ricandomayorga2.jpg"
-      ]
-    },
-    {
-      "ID": 2,
-      "Marca": "Skate Armado Almost",
-      "Descripcion": "Skate Armado Almost",
-      "Tipo": "Tabla",
-      "Medida": "8.0",
-      "Precio": 125,
-      "Unidades": 7,
-      "Disponible": true,
-      "Imagenes": [
-        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-2.jpg",
-        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost-1.jpg",
-        "/recursos/Seccion 2/Tablas/TablaJF.jpg",
-        "/recursos/Seccion 2/Tablas/TablaJF-copy.jpg",
-        "/recursos/Seccion 2/Tablas/TablaJF-copy.png"
+        "/Recursos/Seccion 2/Tablas/TablaArmada-Almost.png"
       ]
     },
     {
