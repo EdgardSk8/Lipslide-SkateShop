@@ -115,7 +115,6 @@ html {
   border: 2px solid rgb(187, 186, 186);
   display: flex;
   gap: 10px;
-  height: 250px; /* altura fija para mantener consistencia */
 }
 
 .info {
@@ -215,17 +214,20 @@ html {
   }
 
   .cards {
-    flex-direction: column; 
-    height: auto; 
-    padding: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    height: auto;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
   }
-
-  .info{
-    border: 2px solid rgb(187, 186, 186);
-    background-color: rgb(230, 230, 230);
-    border-radius: 10px;
+  
+  .info {
+    border: 1px solid #bbb;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
   }
+  
 
   .botones button{
     padding: 10px 10px;
